@@ -10,6 +10,8 @@ Every pre-trained model needs the text to be processed in a certain way hence wh
 
 HF provides the tokenizer for a particular model via `AutoTokenizer` class. Below snippet from the official course
 
+To know which all models are available one can visit [this](https://huggingface.co/models?pipeline_tag=text-classification&sort=downloads) page
+
 ```python
 from transformers import AutoTokenizer
 
@@ -17,6 +19,7 @@ checkpoint = "distilbert-base-uncased-finetuned-sst-2-english"
 tokenizer = AutoTokenizer.from_pretrained(checkpoint)
 ```
 
+**Models**
 The second slightly lower level api is that of `models`. This lets you download pre-trained models. The relevant class is `AutoModel`
 
 The following snippet is from the official course:
@@ -36,4 +39,6 @@ The `Auto*` maps to different models as shown in the table below
 |*ForMaskedLM| BERT style masked language  models, autocomplete systems etc|
 |*ForMultipleChoice| BERT/Encoder based multiple choice model|
 |*ForSequenceClassification| Text classification models ala BERT/GPT whole shebang|
-|*ForTokenClassification| NER< POS etc, mostly BERT family of models| 
+|*ForTokenClassification| NER,POS etc, mostly BERT family of models| 
+
+
