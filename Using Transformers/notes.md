@@ -10,7 +10,7 @@ Every pre-trained model needs the text to be processed in a certain way hence wh
 
 HF provides the tokenizer for a particular model via `AutoTokenizer` class. Below snippet from the official course
 
-To know which all models are available one can visit [this](https://huggingface.co/models?pipeline_tag=text-classification&sort=downloads) page
+To know which all models are available one can visit [this](https://huggingface.co/models?pipeline_tag=text-classification&sort=downloads) page.
 
 ```python
 from transformers import AutoTokenizer
